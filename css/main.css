@@ -1,0 +1,93 @@
+#fadeinleft {
+	 -webkit-animation-delay: 2s;  
+}
+
+#fadeinright {
+	 -webkit-animation-delay: 4s;  
+}
+
+
+
+.hiding { opacity: 0; }
+.visible { opacity: 1; }
+
+  .styled.customSelect {
+    text-align: left;
+    height: 50px;
+    padding-top: 15px;
+    color:#aaa;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+span.customSelect { 
+    background:#fff url(/img/select_arrow_double_red.jpg) right center no-repeat;
+    border:2px solid #d2dae2;
+    color:#555;
+    padding:7px 9px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px 2px;
+    width:100%;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.customSelectInner {
+    width:160px;
+}
+
+span.customSelect.customSelectHover {
+    background:#fff url(/img/select_arrow_double_red.jpg) right center no-repeat;
+}
+
+.customSelect.customSelectHover {
+
+}
+
+.customSelect.customSelectFocus {
+    background:#fff url(/img/select_arrow_double_red.jpg) right center no-repeat;
+}
+
+#site-header {
+    width: 100%;
+    float:left;
+    background-color: #fafafa;
+}
+
+#site-header > img {
+    width:100%;
+    position:relative;
+    z-index:9;
+    float:left;
+    display:block;
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+
+#site-header .lead-centered-vertical {
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    vertical-align: middle;
+    margin:0 auto;width: 100%;
+    text-align: center;
+}
+
+#home {
+    padding:40px 0;
+    background-color:#eee; 
+    float:left;
+    width: 100%;
+}
+#services {
+    padding:20px 0;
+    background-color:#eee; 
+    float:left;
+    width: 100%;
+}

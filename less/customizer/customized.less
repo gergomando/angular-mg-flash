@@ -1,0 +1,221 @@
+
+@style:1;
+@radiusOn:off;
+@boxShadow:off;
+@gradient:on;
+
+@navbarColor: #000;
+
+.navbar {
+  min-height:60px; 
+}
+
+.navbar-inverse {
+	border-top:3px solid @base;
+  background-color: @navbarColor;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+		font-weight:bold;
+		&:hover {
+			border-bottom:3px solid #555;
+		}
+		&:focus {
+
+			border-bottom:3px solid #555;
+		}	
+}
+
+.badge {
+		background-color: @base;	
+}
+
+.nav > li > a {
+	padding: 5px 0px;
+  margin: 0 15px;
+}
+
+.navbar-collapse {
+	padding-top:12px;
+}
+
+.no-padding-left {
+	padding-left:0;
+}
+
+.no-padding-right {
+	padding-right:0;
+}
+
+
+.simple.nav-pills {
+  border-bottom: 1px solid #e2e2e2;
+  border-top:1px solid #e2e2e2;
+  margin:20px 0;
+  background-color: lighten(@base,20%);
+}
+
+.simple.nav-pills li {
+  margin:10px 0;
+  float:none;
+  display:inline-block;
+}
+
+.simple.nav-pills > li > a {
+  padding: 7px 25px;
+  background-color: #fff;
+  color:#999;
+  border-radius:20px !important
+
+}
+
+.simple.nav-pills > li:not(:first-child) {
+  margin-left:10px;
+}
+
+
+.simple.nav-pills > li > a:focus,
+.simple.nav-pills > li > a:hover  {
+  color:#666;
+  outline:none;
+}
+
+.simple.nav-pills > li.active > a,
+.simple.nav-pills > li.active > a:hover,
+.simple.nav-pills > li.active > a:focus {
+  background-color: #EFEFEF;
+  border:1px solid #aaa;
+  color:@base;
+  text-shadow:1px 1px 1px #fff;
+  box-shadow: 1px 1px 2px #ccc inset;
+  border-radius:20px !important;
+  font-weight: bold;
+  outline:none;
+}
+
+
+
+.inline-header when (@style = 1 ) {
+    background-color: @base;
+    font-weight:bold;
+    color:@white;    
+    padding: 15px;
+    border-bottom:1px solid @basespin;
+	 .border-radius;
+}
+
+.inline-header when (@style = 2 ) {
+    background-color: @base;
+    font-weight:bold;
+    color:@white;
+    border:none;    
+    padding: 10px 30px;
+    border-bottom:3px solid @basespin;
+    display:inline-block;
+    .border-radius;
+}
+
+.inline-header when (@style = 3 ) {
+    background-color: #f4f4f4;
+    font-weight:bold;
+    color:darken(@basespin,25%);  
+    padding: 15px;
+    border-left:2px solid lighten(@base,10%);
+    border-radius:0;
+}
+
+.inline-header when (@style = 4 ) {
+    background-color: #f4f4f4;
+    font-weight:bold;
+    color:darken(@basespin,25%);    
+    padding: 15px;
+    text-align:right;
+    border-bottom:2px solid lighten(@base,10%);
+    border-radius:0;
+}
+
+.bordered.content-box {
+  border:1px solid @base;
+  padding:15px;
+  .margintop20;
+}
+
+.content-box {
+  .margintop20;
+}
+
+.content-box > .content-title {
+  border-bottom:1px solid @base;
+}
+
+.content-box > form {
+  padding:15px;
+}
+
+.panel {
+	border-radius:0;
+  .margintop20;
+}
+
+.panel-title {
+  font-weight:bold;
+}
+
+.panel-default > .panel-heading {
+	color:#fff;
+	background-color:@base;
+	border-color:@base;
+}
+
+.panel-default {
+	border-color:@base;
+}
+
+.panel-heading {
+	border-radius:0;
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+}
+
+.social.panel-body {
+  text-align:center;
+
+}
+.social.panel-body > a {
+  padding: 15px 15px;
+}
+
+@media (max-width:480px) {
+  .social.panel-body > a {
+    padding:15px 10px;
+  }
+}
+
+.filled.inline-header {
+    background-color: @base;
+    font-weight:bold;
+    color:@white;    
+    padding: 15px;
+    border-bottom:1px solid @basespin;
+   .border-radius;
+}
+
+.border-bottom.inline-header  {
+    background-color: @base;
+    font-weight:bold;
+    color:@white;
+    border:none;    
+    padding: 10px 30px;
+    border-bottom:3px solid @basespin;
+    display:inline-block;
+    .border-radius;
+}
+
+.border-left.inline-header {
+    background-color: transparent;
+    font-weight:bold;
+    color:#000;    
+    padding: 15px;
+    border-left:2px solid @base;
+    border-radius:0;
+}

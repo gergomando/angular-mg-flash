@@ -1,0 +1,56 @@
+/*
+daskblue : 7DA1BF
+lucite green: #7DCFB6
+
+
+
+ */
+
+@base: #7DA1BF;           
+@basespin : spin(@base, 100);
+
+@lighten1:  lighten(@base, 5%);
+@lighten2:  lighten(@base, 10%);
+@lighten3:  lighten(@base, 15%);
+@lighten4:  lighten(@base, 20%);
+
+@darken1:   darken(@base, 5%);
+@darken2:   darken(@base, 10%);
+@darken3:   darken(@base, 15%);
+@darken4:   darken(@base, 20%);
+
+@white: #FFF;
+@whiteDarker:   darken(@white, 5%);
+@whiteDarker2:  darken(@white, 10%);
+@whiteDarker3:  darken(@white, 15%); 
+@whiteDarker4:  darken(@white, 20%);
+
+@black : #000;
+@gray1 : lighten(@black, 15%);
+@gray2 : lighten(@black, 30%);
+@gray3 : lighten(@black, 45%);
+@gray4 : lighten(@black, 60%);
+
+
+.box-shadow when (@boxShadow = on) { 
+    box-shadow: 0px -1px 1px @darken4;
+
+}
+
+.border-radius when (@radiusOn = on) {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+
+
+.background-gradient(@start, @stop) {
+background: mix(@start, @stop, 50%);
+background: -webkit-gradient(linear, left top, left bottom, from(@start), to(@stop));
+background: -webkit-linear-gradient(top, @start, @stop);
+background: -moz-linear-gradient(top, @start, @stop);
+background: -o-linear-gradient(top, @start, @stop);
+background: linear-gradient(to bottom, @start, @stop);
+
+}
